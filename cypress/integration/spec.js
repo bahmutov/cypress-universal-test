@@ -2,6 +2,9 @@
 const util = require('util')
 
 describe('Universal code', () => {
+  // tests a single source file by comparing the output
+  // when it is evaluated in the browser
+  // with its output when evaluated in Node
   it('runs in the browser', function () {
     const sum = require('raw-loader?esModule=false!../../src/sum')
     let browserOutput = ''
