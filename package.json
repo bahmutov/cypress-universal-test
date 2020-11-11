@@ -20,6 +20,7 @@
   "devDependencies": {
     "cypress": "5.6.0",
     "globby": "11.0.1",
-    "raw-loader": "4.0.2"
+    "raw-loader": "4.0.2",
+    "require-and-forget": "1.0.0"
   }
 }

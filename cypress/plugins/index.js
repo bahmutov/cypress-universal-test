@@ -1,5 +1,6 @@
 const util = require('util')
 const globby = require('globby')
+const forget = require('require-and-forget')
 module.exports = (on, config) => {
   // files are with respect to the working folder
   const sourceFiles = globby.sync('src/*.js')
@@ -17,7 +18,7 @@ module.exports = (on, config) => {
         log.apply(null, args)
       }
 
-      require(filename)
+      forget(filename)
 
       return text
     }
